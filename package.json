@@ -18,6 +18,9 @@
   },
   "type": "module",
   "main": "lib/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
