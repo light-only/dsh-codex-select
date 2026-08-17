@@ -14,14 +14,18 @@ exactly like Codex.
 - **文件 / Files conversation view tab**: lazy workspace file tree (skips
   `node_modules` / `.git` by default, toggles included) + read-only file
   viewer (UTF-8 text only, ≤ 1 MiB, binary rejected).
-- **Codex-style selection**: select code inside the viewer — a chip appears
-  **above the composer**: `已选中 N 行 · <file>`, and a matching reference
-  chip is inserted into the composer automatically.
-- **No button, no draft pollution**: the code never lands in the visible draft
-  text; the input machine serializes the chip through the plugin codec into a
-  fenced code block with a file-path comment when you send.
-- **× clears** the chip; selecting different code replaces the previous chip;
-  collapsing the selection keeps the chip (Codex behaviour).
+- **Codex-style selection — both files and snippets**:
+  - select **code** inside the viewer — a chip appears **above the composer**:
+    `已选中 N 行 · <file>`, and a matching reference chip is inserted into the
+    composer automatically;
+  - add a **whole file** to the context by clicking the **＋** button on a file
+    tree row (or the toolbar's **加入文件 / Add file** button) — the entire
+    file is attached as context.
+- **No button, no draft pollution**: the content never lands in the visible
+  draft text; the input machine serializes the chip through the plugin codec
+  into a fenced code block with a file-path comment when you send.
+- **× clears** the chip; a new pick (code or file) replaces the previous chip;
+  collapsing a code selection keeps the chip (Codex behaviour).
 
 ## Install
 
