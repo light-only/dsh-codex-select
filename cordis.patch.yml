@@ -1,0 +1,7 @@
+# dsh-codex-select bundle patch: one host row carries the plugin package.
+# The node half (this package's main entry) registers the listing/read routes;
+# the browser half rides the package.json dsh.client declaration and the
+# ./client export, exactly like the harness's own client packages.
+- insert:
+    - id: codex-select
+      name: dsh-codex-select
